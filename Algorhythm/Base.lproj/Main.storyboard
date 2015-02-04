@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="u9v-C7-O7I" kind="push" id="MRd-BP-sdN"/>
+                                    <segue destination="u9v-C7-O7I" kind="push" identifier="showPlaylistDetail" id="MRd-BP-sdN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,9 +53,24 @@
                     <view key="view" contentMode="scaleToFill" id="ay8-PK-9Ag">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't press the button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-Fu-ZfW">
+                                <rect key="frame" x="50" y="273.5" width="220" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="5kn-Fu-ZfW" secondAttribute="centerY" id="Zfu-wq-Hyc"/>
+                            <constraint firstAttribute="centerX" secondItem="5kn-Fu-ZfW" secondAttribute="centerX" id="nAN-Yx-VaD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="EXH-9C-OT5"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="5kn-Fu-ZfW" id="eWm-c0-J5M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Okf-bG-7Af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,6 +93,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PR-hf-Jk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="85" y="368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KCg-Jn-0md">
+            <objects>
+                <viewController id="jcx-n5-JgI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NT1-Zr-rtU"/>
+                        <viewControllerLayoutGuide type="bottom" id="SgW-bE-B9J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bjo-HB-EWL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ut8-pz-Hvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
