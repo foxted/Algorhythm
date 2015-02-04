@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PlaylistMasterViewController.swift
 //  Algorhythm
 //
 //  Created by Morgan Clayton on 2015-02-04.
@@ -9,7 +9,7 @@
 import UIKit
 
 class PlaylistMasterViewController: UIViewController {
-
+    
     @IBOutlet weak var aButton: UIButton!
     
     override func viewDidLoad() {
@@ -24,11 +24,7 @@ class PlaylistMasterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func buttonPressed() {
-        
-        view.backgroundColor = UIColor.orangeColor()
-        
-    }
+
 
 }
 
