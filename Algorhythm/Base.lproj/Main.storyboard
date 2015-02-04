@@ -16,10 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nfg-yw-oNo">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="LtC-p3-uHU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="TQC-Wi-d4H"/>
+                                    <constraint firstAttribute="width" constant="200" id="crb-0L-Nhy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="kvK-Qj-1uK"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwp-oW-IHG">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -27,15 +36,18 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.29266715049999997" green="0.74557697769999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="zwp-oW-IHG" secondAttribute="centerX" id="VYI-wE-dLk"/>
-                            <constraint firstAttribute="centerY" secondItem="zwp-oW-IHG" secondAttribute="centerY" id="agU-6a-Hm8"/>
+                            <constraint firstItem="zwp-oW-IHG" firstAttribute="top" secondItem="nfg-yw-oNo" secondAttribute="bottom" constant="8" id="9fc-ht-KcP"/>
+                            <constraint firstAttribute="centerY" secondItem="nfg-yw-oNo" secondAttribute="centerY" id="RYo-8O-YSB"/>
+                            <constraint firstAttribute="centerX" secondItem="nfg-yw-oNo" secondAttribute="centerX" id="ZG2-7U-7ub"/>
+                            <constraint firstAttribute="centerX" secondItem="zwp-oW-IHG" secondAttribute="centerX" id="c6D-0d-R6j"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="0By-py-Lcp"/>
                     <connections>
                         <outlet property="aButton" destination="zwp-oW-IHG" id="ftB-UE-hJf"/>
+                        <outlet property="playlistImageView0" destination="nfg-yw-oNo" id="j16-Tp-PwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -94,24 +106,10 @@
             </objects>
             <point key="canvasLocation" x="85" y="368"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="KCg-Jn-0md">
-            <objects>
-                <viewController id="jcx-n5-JgI" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NT1-Zr-rtU"/>
-                        <viewControllerLayoutGuide type="bottom" id="SgW-bE-B9J"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bjo-HB-EWL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ut8-pz-Hvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="66" height="73"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
